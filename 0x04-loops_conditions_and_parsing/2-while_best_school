@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
-# Displays a list of currently running processes containing the bash keyword.
-# shellcheck disable=SC2009
+# Displays "Best School" 10 times using a while loop.
 
-ps -aux | grep bash
+count=0
+
+while [ $count -lt 10 ]
+do
+  echo "Best School"
+  (( count++ ))
+done
